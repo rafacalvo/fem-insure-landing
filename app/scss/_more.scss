@@ -1,0 +1,57 @@
+.see-more {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: $darkViolet;
+  margin: 0 1rem 8.75rem 1rem;
+  height: 21.4375rem;
+
+  background-image: url('/images/bg-pattern-how-we-work-mobile.svg');
+  background-position: right 0%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+
+
+  @include breakpoint-up(large) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 20.875rem;
+    padding: 7.5rem 6.875rem;
+    margin-bottom: 12.75rem;
+
+    background-image: url('/images/bg-pattern-how-we-work-desktop.svg');
+    background-position: right -20%;
+    background-repeat: no-repeat;
+    background-size: 40%;
+  }
+
+
+
+  h1 {
+    color: #fff;
+    padding: 0 1rem;
+    margin-bottom: rem;
+    text-align: center;
+
+    @include breakpoint-up(large) {
+      width: 70%;
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  .button {
+    color: #fff;
+    border: 2px solid #fff;
+    height: 3.25rem;
+    opacity: 1;
+  }
+
+  .button:hover {
+    background-color: #fff;
+    color: $darkViolet
+  }
+}

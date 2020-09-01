@@ -1,0 +1,85 @@
+.footer {
+  background-color: $veryLightGRay;
+  padding: 5.625rem 0;
+  background-image: url('/images/bg-pattern-footer-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 120%;
+
+  @include breakpoint-up(large) {
+    background-image: url('/images/bg-pattern-footer-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: -10% 0%;
+    background-size: 45%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+
+    @include breakpoint-up(large) {
+      justify-content: space-between;
+      flex-direction: row;
+      margin-bottom: 3.125rem;
+    }
+
+    ul {
+      margin: 2.125rem 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+
+      @include breakpoint-up(large) {
+        margin-left: 1rem;
+      }
+
+      li {
+        margin: 0.5rem;
+      }
+    }
+
+
+  }
+
+  &__line {
+    border: 1px $grayishBlue solid;
+    margin: 0 auto;
+    width: 20.4375rem;
+
+    @include breakpoint-up(large) {
+      width: 100%;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include breakpoint-up(large) {
+      flex-direction: row;
+      justify-content: space-evenly;
+      text-align: left;
+    }
+
+    a {
+      color: $darkViolet;
+      line-height: 2;
+    }
+  }
+
+  &__item {
+    display: grid;
+    justify-content: start;
+    flex-direction: column;
+    p {
+      margin: 2.5rem 0 1.5rem 0;
+    }
+  }
+}
