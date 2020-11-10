@@ -639,6 +639,7 @@ button:hover::before, .button:hover::before {
   .footer__header {
     justify-content: space-between;
     flex-direction: row;
+    padding: 0 4rem;
     margin-bottom: 3.125rem;
   }
 }
