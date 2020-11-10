@@ -23,6 +23,7 @@
     @include breakpoint-up(large) {
       justify-content: space-between;
       flex-direction: row;
+      padding: 0 4rem;
       margin-bottom: 3.125rem;
     }
 
